@@ -1,0 +1,603 @@
+<?xml version="1.0" standalone="yes" ?>
+<DBMODEL Version="4.0">
+<SETTINGS>
+<GLOBALSETTINGS ModelName="modelo BD" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="100.00" XPos="0" YPos="0" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="" DefQueryDBConn="" Printer="\\socrates\EUTERPE" HPageCount="5.001221001221001" PageAspectRatio="1.431813406177768" PageOrientation="0" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="0" UsePositionGrid="0" PositionGridX="20" PositionGridY="20" TableNameInRefs="0" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="0" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
+<DATATYPEGROUPS>
+<DATATYPEGROUP Name="Numeric Types" Icon="1" />
+<DATATYPEGROUP Name="Date and Time Types" Icon="2" />
+<DATATYPEGROUP Name="String Types" Icon="3" />
+<DATATYPEGROUP Name="Blob and Text Types" Icon="4" />
+<DATATYPEGROUP Name="User defined Types" Icon="5" />
+<DATATYPEGROUP Name="Geographic Types" Icon="6" />
+</DATATYPEGROUPS>
+<DATATYPES>
+<DATATYPE ID="1" IDGroup="0" TypeName="TINYINT" Description="A very small integer. The signed range is -128 to 127. The unsigned range is 0 to 255." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="2" IDGroup="0" TypeName="SMALLINT" Description="A small integer. The signed range is -32768 to 32767. The unsigned range is 0 to 65535." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="3" IDGroup="0" TypeName="MEDIUMINT" Description="A medium-size integer. The signed range is -8388608 to 8388607. The unsigned range is 0 to 16777215." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="4" IDGroup="0" TypeName="INT" Description="A normal-size integer. The signed range is -2147483648 to 2147483647. The unsigned range is 0 to 4294967295." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="1" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="0" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="5" IDGroup="0" TypeName="INTEGER" Description="A normal-size integer. The signed range is -2147483648 to 2147483647. The unsigned range is 0 to 4294967295." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="1" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="1" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="6" IDGroup="0" TypeName="BIGINT" Description="A large integer. The signed range is -9223372036854775808 to 9223372036854775807. The unsigned range is 0 to 18446744073709551615." ParamCount="1" OptionCount="2" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="UNSIGNED" Default="0" />
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="7" IDGroup="0" TypeName="FLOAT" Description="A small (single-precision) floating-point number. Cannot be unsigned. Allowable values are -3.402823466E+38 to -1.175494351E-38, 0, and 1.175494351E-38 to 3.402823466E+38." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="precision" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="8" IDGroup="0" TypeName="FLOAT" Description="A small (single-precision) floating-point number. Cannot be unsigned. Allowable values are -3.402823466E+38 to -1.175494351E-38, 0, and 1.175494351E-38 to 3.402823466E+38." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="9" IDGroup="0" TypeName="DOUBLE" Description="A normal-size (double-precision) floating-point number. Cannot be unsigned. Allowable values are -1.7976931348623157E+308 to -2.2250738585072014E-308, 0, and 2.2250738585072014E-308 to 1.7976931348623157E+308." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="10" IDGroup="0" TypeName="DOUBLE PRECISION" Description="This is a synonym for DOUBLE." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="11" IDGroup="0" TypeName="REAL" Description="This is a synonym for DOUBLE." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="2" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="12" IDGroup="0" TypeName="DECIMAL" Description="An unpacked floating-point number. Cannot be unsigned. Behaves like a CHAR column." ParamCount="2" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="3" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="13" IDGroup="0" TypeName="NUMERIC" Description="This is a synonym for DECIMAL." ParamCount="2" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="3" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+<PARAM Name="decimals" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="ZEROFILL" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="14" IDGroup="1" TypeName="DATE" Description="A date. The supported range is \a1000-01-01\a to \a9999-12-31\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="15" IDGroup="1" TypeName="DATETIME" Description="A date and time combination. The supported range is \a1000-01-01 00:00:00\a to \a9999-12-31 23:59:59\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="16" IDGroup="1" TypeName="TIMESTAMP" Description="A timestamp. The range is \a1970-01-01 00:00:00\a to sometime in the year 2037. The length can be 14 (or missing), 12, 10, 8, 6, 4, or 2 representing YYYYMMDDHHMMSS, ... , YYYYMMDD, ... , YY formats." ParamCount="1" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="17" IDGroup="1" TypeName="TIME" Description="A time. The range is \a-838:59:59\a to \a838:59:59\a." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="18" IDGroup="1" TypeName="YEAR" Description="A year in 2- or 4-digit format (default is 4-digit)." ParamCount="1" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="19" IDGroup="2" TypeName="CHAR" Description="A fixed-length string (1 to 255 characters) that is always right-padded with spaces to the specified length when stored. values are sorted and compared in case-insensitive fashion according to the default character set unless the BINARY keyword is given." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="20" IDGroup="2" TypeName="VARCHAR" Description="A variable-length string (1 to 255 characters). Values are sorted and compared in case-sensitive fashion unless the BINARY keyword is given." ParamCount="1" OptionCount="1" ParamRequired="1" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="length" />
+</PARAMS>
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="21" IDGroup="2" TypeName="BIT" Description="This is a synonym for CHAR(1)." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="22" IDGroup="2" TypeName="BOOL" Description="This is a synonym for CHAR(1)." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="23" IDGroup="3" TypeName="TINYBLOB" Description="A column maximum length of 255 (2^8 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="24" IDGroup="3" TypeName="BLOB" Description="A column maximum length of 65535 (2^16 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="25" IDGroup="3" TypeName="MEDIUMBLOB" Description="A column maximum length of 16777215 (2^24 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="26" IDGroup="3" TypeName="LONGBLOB" Description="A column maximum length of 4294967295 (2^32 - 1) characters. Values are sorted and compared in case-sensitive fashion." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="27" IDGroup="3" TypeName="TINYTEXT" Description="A column maximum length of 255 (2^8 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="28" IDGroup="3" TypeName="TEXT" Description="A column maximum length of 65535 (2^16 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="29" IDGroup="3" TypeName="MEDIUMTEXT" Description="A column maximum length of 16777215 (2^24 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="30" IDGroup="3" TypeName="LONGTEXT" Description="A column maximum length of 4294967295 (2^32 - 1) characters." ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="31" IDGroup="3" TypeName="ENUM" Description="An enumeration. A string object that can have only one value, chosen from the list of values." ParamCount="1" OptionCount="0" ParamRequired="1" EditParamsAsString="1" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="values" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="32" IDGroup="3" TypeName="SET" Description="A set. A string object that can have zero or more values, each of which must be chosen from the list of values." ParamCount="1" OptionCount="0" ParamRequired="1" EditParamsAsString="1" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<PARAMS>
+<PARAM Name="values" />
+</PARAMS>
+</DATATYPE>
+<DATATYPE ID="33" IDGroup="4" TypeName="Varchar(20)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="34" IDGroup="4" TypeName="Varchar(45)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="35" IDGroup="4" TypeName="Varchar(255)" Description="" ParamCount="0" OptionCount="1" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+<OPTIONS>
+<OPTION Name="BINARY" Default="0" />
+</OPTIONS>
+</DATATYPE>
+<DATATYPE ID="36" IDGroup="5" TypeName="GEOMETRY" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="38" IDGroup="5" TypeName="LINESTRING" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="39" IDGroup="5" TypeName="POLYGON" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="40" IDGroup="5" TypeName="MULTIPOINT" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="41" IDGroup="5" TypeName="MULTILINESTRING" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="42" IDGroup="5" TypeName="MULTIPOLYGON" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+<DATATYPE ID="43" IDGroup="5" TypeName="GEOMETRYCOLLECTION" Description="Geographic Datatype" ParamCount="0" OptionCount="0" ParamRequired="0" EditParamsAsString="0" SynonymGroup="0" PhysicalMapping="0" PhysicalTypeName="" >
+</DATATYPE>
+</DATATYPES>
+<COMMON_DATATYPES>
+<COMMON_DATATYPE ID="5" />
+<COMMON_DATATYPE ID="8" />
+<COMMON_DATATYPE ID="20" />
+<COMMON_DATATYPE ID="15" />
+<COMMON_DATATYPE ID="22" />
+<COMMON_DATATYPE ID="28" />
+<COMMON_DATATYPE ID="26" />
+<COMMON_DATATYPE ID="33" />
+<COMMON_DATATYPE ID="34" />
+<COMMON_DATATYPE ID="35" />
+</COMMON_DATATYPES>
+<TABLEPREFIXES>
+<TABLEPREFIX Name="Default (no prefix)" />
+</TABLEPREFIXES>
+<REGIONCOLORS>
+<REGIONCOLOR Color="Red=#FFEEEC" />
+<REGIONCOLOR Color="Yellow=#FEFDED" />
+<REGIONCOLOR Color="Green=#EAFFE5" />
+<REGIONCOLOR Color="Cyan=#ECFDFF" />
+<REGIONCOLOR Color="Blue=#F0F1FE" />
+<REGIONCOLOR Color="Magenta=#FFEBFA" />
+</REGIONCOLORS>
+<POSITIONMARKERS>
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+<POSITIONMARKER ZoomFac="-1.0" X="0" Y="0" />
+</POSITIONMARKERS>
+</SETTINGS>
+<METADATA>
+<REGIONS>
+</REGIONS>
+<TABLES>
+<TABLE ID="1000" Tablename="alumnos" PrevTableName="Table_01" XPos="67" YPos="52" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
+<COLUMNS>
+<COLUMN ID="1011" ColName="id_alumno" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1076" ColName="id_curso" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1013" ColName="nom" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(30)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1014" ColName="ap1" PrevColName="" Pos="2" idDatatype="20" DatatypeParams="(20)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1015" ColName="ap2" PrevColName="" Pos="3" idDatatype="20" DatatypeParams="(20)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1017" ColName="clase" PrevColName="" Pos="5" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1018" ColName="repite" PrevColName="id_opcion" Pos="6" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="false" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1078" ColName="sexo" PrevColName="" Pos="7" idDatatype="31" DatatypeParams="(\aH\a,\aM\a)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1079" ColName="div" PrevColName="" Pos="8" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="false" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1080" ColName="len" PrevColName="" Pos="9" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1081" ColName="mat" PrevColName="" Pos="10" idDatatype="19" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1091" />
+<RELATION_START ID="1102" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1075" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1012" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1011" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1019" Tablename="materias" PrevTableName="Table_02" XPos="264" YPos="183" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
+<COLUMNS>
+<COLUMN ID="1021" ColName="id_materia" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1073" ColName="id_curso" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1071" ColName="id_departamento" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1024" ColName="materia" PrevColName="" Pos="2" idDatatype="20" DatatypeParams="(40)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1025" ColName="tipo" PrevColName="" Pos="3" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1097" />
+<RELATION_START ID="1103" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1070" />
+<RELATION_END ID="1072" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1022" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1021" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1026" Tablename="libros" PrevTableName="Table_03" XPos="593" YPos="368" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="4" >
+<COLUMNS>
+<COLUMN ID="1028" ColName="id_libro" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1100" ColName="id_editorial" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1098" ColName="id_materia" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1030" ColName="titulo" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(60)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1031" ColName="isbn" PrevColName="" Pos="2" idDatatype="20" DatatypeParams="(15)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1033" ColName="precio" PrevColName="" Pos="4" idDatatype="12" DatatypeParams="(10,2)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1085" ColName="gratuidad" PrevColName="" Pos="6" idDatatype="22" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="false" Comments="">
+<OPTIONSELECTED>
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1092" />
+</RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1097" />
+<RELATION_END ID="1099" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1029" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1028" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1049" Tablename="editoriales" PrevTableName="Table_06" XPos="515" YPos="641" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
+<COLUMNS>
+<COLUMN ID="1051" ColName="id_editorial" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1053" ColName="editorial" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(20)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1099" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1052" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1051" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1057" Tablename="cursos" PrevTableName="Table_06" XPos="490" YPos="24" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="11" >
+<COLUMNS>
+<COLUMN ID="1059" ColName="id_curso" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1061" ColName="curso" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(10)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1072" />
+<RELATION_START ID="1075" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1060" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1059" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1063" Tablename="departamentos" PrevTableName="Table_07" XPos="586" YPos="128" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="12" >
+<COLUMNS>
+<COLUMN ID="1065" ColName="id_departamento" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1067" ColName="departamento" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="(40)" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1070" />
+</RELATIONS_START>
+<INDICES>
+<INDEX ID="1066" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1065" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1090" Tablename="alu_lib" PrevTableName="alumnos_has_libros" XPos="55" YPos="603" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" >
+<COLUMNS>
+<COLUMN ID="1093" ColName="id_alumno" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1094" ColName="id_libro" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="1091" />
+<RELATION_END ID="1092" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1095" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1093" LengthParam="0" />
+<INDEXCOLUMN idColumn="1094" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+<TABLE ID="1101" Tablename="alu_mat" PrevTableName="alumnos_has_materias" XPos="205" YPos="385" TableType="0" TablePrefix="0" nmTable="1" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" >
+<COLUMNS>
+<COLUMN ID="1104" ColName="id_alumno" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1105" ColName="id_materia" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+</COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="1102" />
+<RELATION_END ID="1103" />
+</RELATIONS_END>
+<INDICES>
+<INDEX ID="1106" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1104" LengthParam="0" />
+<INDEXCOLUMN idColumn="1105" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+</INDICES>
+</TABLE>
+</TABLES>
+<RELATIONS>
+<RELATION ID="1070" RelationName="Rel_06" Kind="2" SrcTable="1063" DestTable="1019" FKFields="id_departamento=id_departamento\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="13" />
+<RELATION ID="1072" RelationName="Rel_07" Kind="2" SrcTable="1057" DestTable="1019" FKFields="id_curso=id_curso\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="14" />
+<RELATION ID="1075" RelationName="Rel_08" Kind="2" SrcTable="1057" DestTable="1000" FKFields="id_curso=id_curso\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" />
+<RELATION ID="1091" RelationName="Rel_08" Kind="1" SrcTable="1000" DestTable="1090" FKFields="id_alumno=id_alumno\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
+<RELATION ID="1092" RelationName="Rel_09" Kind="1" SrcTable="1026" DestTable="1090" FKFields="id_libro=id_libro\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
+<RELATION ID="1097" RelationName="Rel_10" Kind="2" SrcTable="1019" DestTable="1026" FKFields="id_materia=id_materia\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="14" />
+<RELATION ID="1099" RelationName="Rel_11" Kind="2" SrcTable="1049" DestTable="1026" FKFields="id_editorial=id_editorial\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" />
+<RELATION ID="1102" RelationName="Rel_12" Kind="1" SrcTable="1000" DestTable="1101" FKFields="id_alumno=id_alumno\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" />
+<RELATION ID="1103" RelationName="Rel_13" Kind="1" SrcTable="1019" DestTable="1101" FKFields="id_materia=id_materia\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="-1" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
+</RELATIONS>
+<NOTES>
+</NOTES>
+<IMAGES>
+</IMAGES>
+</METADATA>
+<PLUGINDATA>
+<PLUGINDATARECORDS>
+<PLUGINDATARECORD PluginName="SimpleWebFront" Obj_id="0" DataValue="nil">
+<PLUGINDATAPARAMS>
+<PLUGINDATAPARAM Value="\k?xml version=\A1.0\A?\g\n\kSWF_Data\g\kHostname\g192.168.3.3\k/Hostname\g\kUsername\groot\k/Username\g\kDatabasename\ggeslib\k/Databasename\g\kHeading\gdatos\k/Heading\g\kLayout\gStandard\k/Layout\g\kWinSaveDir\gC:\\Documents and Settings\\vmsanchez.LASALLE\\Mis documentos\\40-Desarrollo\\libros-matriculas\\intro\\\k/WinSaveDir\g\kSWF_Groups\g\kSWF_Group\g\kName\gIntroducir materiales\k/Name\g\kShowOnLine\g1\k/ShowOnLine\g\kShowInColumn\g1\k/ShowInColumn\g\kViewsAsPopup\gTrue\k/ViewsAsPopup\g\kSWF_Views\g\kSWF_View\g\kFormHeight\g400\k/FormHeight\g\kFormWidth\g600\k/FormWidth\g\kFormX\g50\k/FormX\g\kFormY\g50\k/FormY\g\kGridPopupHeight\g600\k/GridPopupHeight\g\kGridPopupWidth\g800\k/GridPopupWidth\g\kGridPopupX\g200\k/GridPopupX\g\kGridPopupY\g100\k/GridPopupY\g\kName\gIntroducir libros\k/Name\g\kWhereClause\g\k/WhereClause\g\kRowsPerPage\g20\k/RowsPerPage\g\kUseCompoundColNames\gFalse\k/UseCompoundColNames\g\kIconFilename\gicons_03.png\k/IconFilename\g\kOrderBy\ga_materias.materia\k/OrderBy\g\kGridSortedColumns\g1100,1098,1085,1028,1030,1031,1033,1073,1071,1021,1024,1025,1051,1053\k/GridSortedColumns\g\kFormSortedColumns\g1100,1098,1085,1028,1030,1031,1033,1073,1071,1021,1024,1025,1051,1053\k/FormSortedColumns\g\kIcon\g424D361400000000000036040000280000004000000040000000010008000000000000100000120B0000120B000000010000000100006D655800DADADA00E7D3AB00E2E1E100FFF4D700F3DBAB00FBE4B200FCE2AB00B0B0B000FFFAB800DEDEDE00FCEBC30089744900B29A6900FBE6BA00D6C6A500F4E5C300FDFBF100CABA9800C3B8A300CDCECE0089898600F4DDB100FCECCA00DAC49400ABABAB00D3BA8700F4F4F400E6DCC700D6D6D600A4A4A300FFF6AC00F8DDA400FCF4E000F5DBA400E5BB7200F1EEE700C8B48C00AC915700D1D1D100F2F2F200C9C9C900DCD5C700FDD98C00E5CB9400C2C2C200C6AB7500EBC37900FCE0A300ECECEC00FBD27B0092836300BAAA8500FBD38300FEE79C00D3B67B00E8E8E700FBE8BE00F8F8F800FFF4CD00F0F0F000F6D99B00F1F0EE00E6E6E600EFE9E500CBA85D009D9C9A00F2CC7B00BDBDBD00EBDCBC00F9D6890092919100E2DED800E4E2DB00F4D59400FEF9ED007D642F00C5C5C500CEC4B200F6E0B400DBCCB100EEEEEE00E3E8EB00FBF6EB00F3EDDD00FBFBFB00E3E3E400F5D38D00FCFCFC00F6EAD200BABABA00EAEAEA00FBEDD200A2A19F00F4CD8300F1E1BE00988C7300F7E0AD00F9DD9E00EAE2D1009D999100FEFEFE00EDE9DC00DBB36700F5E1B900F9DA9800D1BD92009B958900FBD99100E9D09600FEFEF800EFE2C600FDDF9E00FED78500E0C08300FDDE9900ECCE8B00BBA4760096815300FEDB9000DCE2E500FFFBE500F2E0B900F8DEA800EEC982009E937B00F9D99500F6E2BC00C8A86900ACA28C00D6CEC200E4D4B300F2E6CD00D8D6D400F3F5F900D5D8DC00E7C68200FCDA9400F7E7C300A59A8300DCDEE000D5D4D200ECF1F000F8F4F200CFD1D200E9E7E300C0AD8500F5F3F000E8C98A00CCB17A00C0B29500EDECEA00E3D9BC00F5FCFD00FDFBF700DFDAD000ECDAB600FFEBAD00E1D6BF00D2D4D600CFCFCF00E2E4E500F2F4F500DCDAD900ECEAEA00DBDBDB00EBC17000E8ECEF00FADC9A00DADDDD00E1E3E400E0CBA100FDDC9700FDFDFD00F7D89600D0D3D500E6E4E400B5AEA100E4E6E800FFEFB800EFEDEC00D3D2D300CEC2A600F2F0F000FDDC9300E6E4E000FDFFFF00F1F2F400F7F0E100F0EFEC00F8EED800A8A7A600F9D78F00DFC68900F5F4F20084817D00E5E3E200F9E9C700F7E5BF00FFEFA300F7F7F700F5F5F500E6E5E700F9E4B800EFF0F200EDEDED00EFD7A200A57D3500B6B6B400B7B7B700F5F7F700D7D7D700D8D9DB00D4D6D900F5D18800F7F9F400CDC9C000F7D98F00D6AB6700DFDFDF00F0F0EF00D6AE7400D2D4D300D4D4D400CBCBCC00B2AB9D00F8F6F500E0E0E000EFEFEF00F1F1F100E8EBEE00F3F2F100F5F0EF00EDECEF007F796C00F1CF8900E7E0D600FBDA9B00F7DB9D00F9F9FC00FBFFFF00BF9A5000C0BFBF00F3E3BF00E6E6E400E5E5E500EDDFC000F9F9F900FCFBF900FBF8FA00E8D8BA00EAE9E700E9E9E900F6E7C800FFFFFF00F6F6F600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1BE4FCF5E30AA5A5E3FC31385B28FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC928315601E0F2D0191E1E1E19F21429A0381BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1BCD03B52D081E644715C3C3C3C3C3475DBFD01D51FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC93C38012908424715471E2DB53F3131AA4200EA155DF2E328FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1B3103A05ABF474742F25655FEFEFEFEFEFEFECD00C3644708E038C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC93C38D34D084247422D31ADFEFEFEFEFEFEFEFEFEFEFE4D15BF0042D1D3E4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1B31E3145A1E4747D00358FEFEFEFEFEFEFEFEFEFEFEFEFEFE6547644CEA5D2D031BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC92838014D08424742291BFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE5A154C4C6B08E038C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC9E4F5DFF2BF474719F565FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFE38EA4CCF0C5DD0D3E4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1B310314D15D47422D1BFEFEFEFEFE58553A58FEFEFEFEFEFEFEFEFEFEFEFEFEFEFE604C41CFC3BF2D031BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF285629084247190A65FEFEFEFEFEFECD5A44E43AFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEB10C41674C640814FCC9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF51145D6444CD65FEFEFEFEFEFEFE1BF2DBF7FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEB90CF1A6F10C5DD1D33CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE50A0A3AFEFEFEFEFEFEFEFEFEFE6555FEFEFEFEFEFEFEFEFEFEFEFE6555034D03FE65FE7D266732CF60BF2D031BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEFEAD3FA014142929E5FE65FE13766732A60C420814FCC9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC8ADFEFEFEFEFEFEFEFEFEFEFEFEFEFEAD310AC8FEFE5856E0D14DA53FC8FEFEFE65FEFE9B0C41433241335DD1013CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEFEFEFEFEFEFEFEFEFEFEC90ADB010355F714F229012828031431FEFE65FEFEFEE23326A632322615BF2D561BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC865FEFEFEFEFEFEFEFE3A032914F5C8FE38290303E4C8312DB501381BFC1BFEFEFEFEFE81266732712F0C4208145BC9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEFEFEFE655B0314DF5B58FCE001FF1BE4F5A514E33FF756DB2DD138FEFEFEFEFE4E768043712B80331ED1013CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3A65FEFE1B141DA531313CB5B5031B31030A1D56C931380AB52D031BADFEFEFEFEFEFE490C0D7C2B2B71266BBF2D561BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEE50AFFE41DF2DB581B3801E0011BF70101B50A28E438FEFEFEFEFE5865FEFE5833268846352B72764208A031FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FEFEFEC9E0015BC83A0ADF311BFE38271D291BE5D329E01DFEFEE431A544A5FEFEFE810C375746D68937601E5AA5E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF58FEFEC851310127E3E5FF3801C8015BE4CD2D442756FFF5D1294D291D381BFEFEFE294C0D7446D989890D64194DF51BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FEFEFE3129381B3FA55638CD3CD3141456FCFF28274D4D1D5BC95B56A056FEFEFE3E0C0C37AE7EAC8974605D082731FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF58FEFEFE3CD3290128C9E3292DA53AE53FD3A00AA5281BD34D444DD3F5F7FEFEFEFE7D0C267462AE6970377D1E5AA5E5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FEFEFEFC56FF5527F2D3FCF73FA52D03281BCDA5D1A5A0A5C865FEFEFEFEFEFEFE130C26954AED7370627564194D3F1BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC8ADFEFEFEE514FC3AC9FC1DDBA5CDE4CD014DB5FCE5FEFEFEFEFEFEFEFEFEFEFEFE48760D0D72ED7062622C7D5D0827CDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEFE3AFF3F291DF5C95138DF29E331C9FEFEFEFEFEBABAFEFE6E117911FEFEF7600D2E806D30EE62076A6BBF5A0AE5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC865FEFE58A5A5CDC8A501F2D33C65FEFEFEFEFEFEFEFE6E1179043B3BB30B65FEFE817D1A2E2E6D223007CE9242194D3F1BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEFEFEFEFE31143C55FEFEFEFEFEFEFEFEFEFEFE04B3B3B39D9D304A21FEFED8331A2C7595CE077B22CE815D08B5CDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF3A65FEFEFEFEFEFEFEFEFEFE583C3C65FEFEFEF7C9BA79203030A8B8572F02FEFE913392CE18756A617B07061864BF440A28FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF55FEFEFEFEFEFEFE58FCA5DFE00AFE58E32D5AE0BAFE0288EB7C7C2F67DD4BFE557D75AB7B2C2E18060606059642192938C9FFFFFFFFFFFFFFFFFFFFFFFFFFFF3AFEFEFEFEC831A0442D0AE5FC1414A0DF1DDCF7FEFE6FDA23236767235779FEFEE1606A07061A34024F610602815DD0DF51FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF58FEFEFEE0B501383F145AF2D35BE4560344A3FEFE1194A62323D6C70904FEFED833256106052525020EB30E0F64BF44DB28FFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FEFEFEC83801DF44A53838E0082714A5CDCDB7FEBA041F1F1F090909B36EFEE4333402160E16346A390E4F689642192938C9FFFFFFFFFFFFFFFFFFFFFFFFFFC8ADFEFEF7A501E403DB4D2D1D3F28311DDFE0B9FEF01109090909091F1F79FEFE6B8B0F4F3939AB92AB7A680B9C815DD01D51FFFFFFFFFFFFFFFFFFFFFFFFFFFF3AFE5555E5E0E0A0565603012944DF3F3CCCA3A5BAFE091F1F1F1F1FC73BFEFED060127F397A39AB3402170BF3B664BFF2E328FFFFFFFFFFFFFFFFFFFFFFFFC9CD3A553AFC275BD3E0292903F538F5A52D14A0F5FEFE04C71FC7C7C7369DFEFE8533969C7A7F178A1212F38AF310134208145BFFFFFFFFFFFFFFFFFFFFFFFFE5D30AAD1B55B5BFF201033814E02D1D03CD65FEFEFEFE4B36C7C7B30B3B2165FEF77D81505F178AF3101212F61717FA5D1E5A0A28FFFFFFFFFFFFFFFFFFFF1BF55A03ADFF1B5BFC550AD04D14CD5558FEFEFEFEFEFEFEADBE2111FEFEFEFEFEFEFEB18150C517F3103BF634B63B0B8A4EBF08145BC9FFFFFFFFFFFFFFFFC931294D3C1BF7CD281B28F5561B3AF755F755AD65FEFEFEFEFEFEFEFEFEFEFEFEFEFEFE4913451710F317171083960F0B17F64E19440A28FFFFFFFFFFFFFFFFE5A5D13831E355CDCD5151E5C81BFF1B3AF7555865FEFEFEFEFEFEFEFEFEFEFEFEFEFEFE9AFAC5C55FC517105F170292028AF3FA5A082731FFFFFFFFFFFFFFC9385A01E7E3DEC9E4FC3151380A4DA51BFFF73A55ADFEFEFEFEFEFEFEFE65F89A114B4B53BC17FD5FF3C58A7A8A397FAB2502686A96D0A031FFFFFFFFFFFFFFCDE02DDCA4D3A93EC938314DBF5A2DA51B1B1BC83A5865FEFEF84B4B2159595C10F317C5F38A177A7A8AC67A7F394F0ECB6A2525952E130AE5FFFFFFFFFFFF280AD03FDCD487FC6324383FA0D3FCE451E4E41B3AD75321215CFD17178AF3178A5F8AC57A7F0B7F7A39394F4F0E4F4FCB4F051A2E2E951331C9FFFFFFFFFFC93844B5E5AAAFAA9150633103563F38FCCD934B53BE6F5F17175F8A17C65F8A0B7AC60B7F7A39CB16CB0E4F4F0E4F16CB6161CEC12C2E12B9C9FFFFFFFFFFFF5127F2BD389FA9382A50BEC2DB56972424BC2121BE84F68AC5F35F8A8A7A7F396868390E4F0E0E164F0E4F1606060506617BCEC188741A481BFFFFFFFFFFFF1BE3D1913ED49FFCEC50635311934BBC66542121BE596F5F0BC67A393968CB390E4F0ECB4FCB0E16050E4F0561060561072022C1C17C1A2AE5FFFFFFFFFFFFC9382D278F56AF0A409E9E21535353BC5454BC2121595910C63968CB3968160ECB4F4F4F161606610561060505067B7B7B223094C19472B6B4FFFFFFFFFFFFFFE4B5F23E9790873F9B50BC6E534B536654212121BE5959C50E164F0ECB164F4F051606160561610561077B22077B220720CE2C94577C1291C9FFFFFFFFFFFF1B035AF4E7A5AFAAE88213F65C214B53BC212121BE5C5C178A1616060616610605050661056161227B077B223030623062624AC14AD61A491BFFFFFFFFFFFFC95B4D27E7C490A9319A9B4E989CF3454559212121BE5C5C5C5F050606617B0707227B07227B0720227B20EE2070627070EE4A744A57722A28FFFFFFFFFFFFFF1BA52D31381DD5A1C9E78548542159500F029C7FF3FD17040468610661220707207B7B22203022EE20203D62706962623DAE94576C944E51FFFFFFFFFFFFFFFFCDF23F5BD4D452BB3AD4AFB23CF7DB8D49548483ABAB024FC606617B22200720200720EE30303D62623D3D70ACACA8694A745789D66A38C9FFFFFFFFFFFFFFFFE38D97E301563CF83F908CE686529FDB3E6EE749636FF650AB7B07CE2230623D6230EE6270EE3D70A86973AC89737E7EEB5E6C6C72491BFFFFFFFFFFFFFFFFFF1DFB3F01B0B4F83E8501E6BBE885A3B4F83A387852D7D76683CE70EE30623D6270EDA87073697373C089896C6CC06C4643C06C722A28FFFFFFFFFFFFFFFFFFFF27FBDB56BDF8E2A3D3F593E2DB8DA186EF31C4B03E9A8E8E982C737070A8A87369AE69AC6CB8B86C77776C2B6CC0D65E7177744E51FFFFFFFFFFFFFFFFFFFFFF8DC4B03128558CA08CE4F7FBDEE32855E4CACAE9F98FA7999E377469A8AC73737E8989C0C0B8C04677C02B772B46433577EB6AFBC9FFFFFFFFFFFFFFFFFFFFFF56A5E41B58FCB58CFCD23C8DA9B4F8E25BE3D4B2CCA4A2FEEC122592953772885777772B772B462B2B46714646435E713537491BFFFFFFFFFFFFFFFFFFFFFFFF1B56F53838DFA003283AA5D3FCFF3A381DD301A501E09FD3D3402463639E0F6A1A3737237C5E352B357171714343713523821BFFFFFFFFFFFFFFFFFFFFFFFFFFFFC9C9C91BE53856FC03A0DF381BF5DB3CC9C9C9C91BE5CD03A3A5A3A5A34924661C9E83181A373723A643323232712F0F51FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC91B1BE5FC3CFFFFFFFFFFFFFFFFFFC9C9C9C9C928CD56E3DB8CD39B66631C83AB252595236725E4C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1B285B0AAAA1DB903EC2662ABDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\k/Icon\g\kSWF_Table\g\kOrigTable\g1026\k/OrigTable\g\kJoin_ColumnName\gid_libro\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1100\k/OrigCol\g\kGridName\gid_editorial\k/GridName\g\kFormName\gid_editorial\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\geditoriales\k/FkTablename\g\kFkColname\gid_editorial\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1098\k/OrigCol\g\kGridName\gid_materia\k/GridName\g\kFormName\gid_materia\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\gmaterias\k/FkTablename\g\kFkColname\gid_materia\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1085\k/OrigCol\g\kGridName\ggratuidad\k/GridName\g\kFormName\ggratuidad\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1028\k/OrigCol\g\kGridName\gid_libro\k/GridName\g\kFormName\gid_libro\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1030\k/OrigCol\g\kGridName\gtitulo\k/GridName\g\kFormName\gtitulo\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g350\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1031\k/OrigCol\g\kGridName\gisbn\k/GridName\g\kFormName\gisbn\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1033\k/OrigCol\g\kGridName\gprecio\k/GridName\g\kFormName\gprecio\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\kJoinTables\g\kSWF_Table\g\kOrigTable\g1019\k/OrigTable\g\kJoin_ColumnName\gmateria\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1073\k/OrigCol\g\kGridName\gid_curso\k/GridName\g\kFormName\gid_curso\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\gcursos\k/FkTablename\g\kFkColname\gid_curso\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1071\k/OrigCol\g\kGridName\gid_departamento\k/GridName\g\kFormName\gid_departamento\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\gdepartamentos\k/FkTablename\g\kFkColname\gid_departamento\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1021\k/OrigCol\g\kGridName\gid_materia\k/GridName\g\kFormName\gid_materia\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1024\k/OrigCol\g\kGridName\gmateria\k/GridName\g\kFormName\gmateria\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1025\k/OrigCol\g\kGridName\gtipo\k/GridName\g\kFormName\gtipo\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\kSWF_Table\g\kOrigTable\g1049\k/OrigTable\g\kJoin_ColumnName\geditorial\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1051\k/OrigCol\g\kGridName\gid_editorial\k/GridName\g\kFormName\gid_editorial\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1053\k/OrigCol\g\kGridName\geditorial\k/GridName\g\kFormName\geditorial\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\k/JoinTables\g\k/SWF_View\g\k/SWF_Views\g\k/SWF_Group\g\kSWF_Group\g\kName\gAdministracion\k/Name\g\kShowOnLine\g2\k/ShowOnLine\g\kShowInColumn\g1\k/ShowInColumn\g\kViewsAsPopup\gTrue\k/ViewsAsPopup\g\kSWF_Views\g\kSWF_View\g\kFormHeight\g400\k/FormHeight\g\kFormWidth\g600\k/FormWidth\g\kFormX\g50\k/FormX\g\kFormY\g50\k/FormY\g\kGridPopupHeight\g600\k/GridPopupHeight\g\kGridPopupWidth\g800\k/GridPopupWidth\g\kGridPopupX\g200\k/GridPopupX\g\kGridPopupY\g100\k/GridPopupY\g\kName\gIntroducir materias\k/Name\g\kWhereClause\g\k/WhereClause\g\kRowsPerPage\g20\k/RowsPerPage\g\kUseCompoundColNames\gFalse\k/UseCompoundColNames\g\kIconFilename\gicons_20.png\k/IconFilename\g\kOrderBy\ga_materias.id_curso\k/OrderBy\g\kGridSortedColumns\g1073,1071,1021,1024,1025,1059,1061,1065,1067\k/GridSortedColumns\g\kFormSortedColumns\g1073,1071,1021,1024,1025,1059,1061,1065,1067\k/FormSortedColumns\g\kIcon\g424D361400000000000036040000280000004000000040000000010008000000000000100000120B0000120B00000001000000010000F3ECD80085B88C00DBDAD800C8E5F900C5D4E200B9E9E7008DC0990082B58200B9B9B700D2EBFA00C7C7C70096C9A2007FB18200ECECEC008897A4004D74A5006B9D6B004E6A9300868285008AB5B80071A4720085B9A3005C667D0085B8860096C99E0083B6E900A0D2AD0076A87600E3F5F900465C430083B68A00A7A4A400A4D7FB009DD0A80077777A00A8DBEF006389B80081B4850096C9EB0070A27100FEF8E300F1F1F10089BC8A007EB0E400DAE5EA00E2F5F5006A9C780093C59500D4C6B2005B84B40094C7A30089BC8E009CBBBB0092C599009ACDAB00D5FEFE00A0D2D4009B96980076A99B0086B9CB00B8DAFA008ABD95006379AC008FC296006EA270009BA2A8006D9F6E0074A67400F4F4F400CCD3D7008EC19100CDFFFE0092C49D00F2FCFC00B5E5F10072A5D9009ACDA200B4BEC900E4DFD1007CAE7C008EC0E50074AA7B0097CAFE006B9BCF0066798E0073A57B006EA1D500A1B7B700E3FFFF00E1E1E00066809C0089BDF10090867A004C724C00DCF1FA0088BB91007CAE810089BC920080B3810090C2910072A5A70086B98F009ACBCB0095C7B50071A3D4006D9BC500AFE2E20071A5770085B8D80072A6B100A4D5C90079AC7A0094C3C200696C8A00ECFDFD0072A584007EB07E0092C59300A5AEAF008EC08E006A9C870099C4C40068989B0078AA7900ABDFDF0090C39400ECF5F80098CBA2006B9CA90079AE7D008CBF960080B3900099CCA50096C99A008FC29900E7E7E70083B684006B9DD2007A7F820098CADD0093C6960094C79D0098CB9D0074889B00A7D9DC008CBF8D00C4EEED00EDEEEF009FD1FF009BCDFF004E5E820098CAA60070757900F7FEFE006992C50080B386007AACDA005E90C4008CBF9800648FC1006C9EB2006FA16F00747167008CBF930072A4C6005D885D00E1E4E700AEE2FF009ED1D100699B6800DAFFFF0091C4F40087BA880081B480007FB2B70087BA8D007CAE7B0073A77200CECDCB0093C7FA0077AADF00C6FAF900DAF3F3008EC0BE0093C69B0079AB7700F6F4F100908A93009ED0BF00679ACF0075AB8F008EC1D6008CBFB2008EC0A7009FD2B100BAD3EB00719BC300D5EFF100F0EFEB006DA08D007DB0980084B695006D91B2006FA196008D8B8B008E9092008BBE8B0088BB9400688AAD00738FAA006668580096C7AE00F0F7F800817973008FC29C00A3D7D600DAD7C7007AAA7D009EA8B2006DA0A6008FC3F80080B3AC0070A3BC009DC8F40090C38F0086A4C20074929D0091ADC90089AED500C3F4F000C5F8F600EDF0F200D3DFE800C5DDF00066656A006D697400ABA395004F5B600091C4CD006794C400F2F6F7006EA1BF006295C80067966400689767007FB2C600689A670079AA8200B3E3DA0070A3890080AF8A0079AB8A00DFE3E70090C4970095C89F00F6F6F600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF870D44FFFF29B293FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF59712239080A5C30EC0829FFFFFFFFFFFFFFFFFFFF44FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDA243E3E7116EBD55C5CA21F87FFFFFFFFFFFF4459028744FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5A898989539A243E117171EAED2208590D442959CD12395944FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5A56807AA069565656899A313E1196169812CC9879138ACC87FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0D315678F6A9102EC7DBDE68684B56539F310F96E2476AB7988A0A93FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB2F24BA9A91010424014146B733A6DA44B4B4B9F9047B57CDAEDED8A760A020D44FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0E56A4A9101010104227274014B1431451BE64A03847376A79BB110F0F111698CD080DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5A4B6D10101042424242A1A142A1146B51811B4355474905387654EF89539D310F110EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF31B4CB4242424242A142A1A142A12714431B14271067582D7C7939ED7AF156565689E1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0D9D9C7342424027A1A127272727271414141427144027E59905D757D25DF3102EA05645FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4D569C6BA14227A12714272714272727141414272714A1C1371C6A66391DA510F6F14B44FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F2BF58114141414141443141414141414141443431414420599929034A25DF42E4BE4FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5A2BAE8143271427434314431B43431B43431B14144343278337726A661F1DA578B44DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2924193A9B9B607B43434343431B1B1B1B1B1B1B1B1B43434310F858C59034D55D80B4A6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF45BD19F76501D63D1E5F9B601B1B1B1B1B1B1B1B1B1B431B1B43FA47996AA8761D692BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8AB46C1B9B65CF650C9E06CFCF3D7B9B606F1B1B1B1B7B1B1B1BA16EAAB67C70CC31E3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0D5419F57B9B81CF069B011E5F5F5F1B0648605F659B816F1B1B1B1BF7B5990538765ADAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF08CA5BDD6F0C1E9ED60148613D5F3D0C5F5F6F06D69E1E823D5F0C7B1BBCAA1C7C79394129FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0D02EF5BFB659E9E65611E5F3D5F82B032610161823D5FAFD6652532D61E55E67292D7571259FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB2084B5B1B65D6063D3D651E823D011ED62507325F25B04F7425655F06746FD337497C661F0A44FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF02BA0E196CB96F74250161D682AF01973206A33DAF82624F4F4F4F4FB04F7474D9925892D7343944FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF444E00D15B13B97B6F4FB04FB00CAF8286483282626125885F25254F4F4F4F4F740CC947996A66B229FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB2284E24DC150C010C74B0744F7462746207173388A3621782010B3282AF250C62252E4A58B69045FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF29C62830BDAB835F258206D6A36188620707AD070707070733A333328688889706D6253A5047FF2D29FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB22828762B507433D606254833ADAF86A382AF170788880707ADADAD07AF3382611E6F3BDF93FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF59BA28000EB3BF74066148333333333F863501360B0B8DA3AC17880788ADAD62620788405B3CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF59282800CA52B717063F368688330B0B3F863FFEB8C2B8A34686AC8817888888AD0762F9B304FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0DFFFFD8695215320648828DACAC9748FE848DFE32350BFD913317881788888807071BAE52FCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC6594B521EFED69733861748FE3FFD350B35367FB8FE843F3F2A17881788888842503C44FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF765B262586D648483F1797B8CE35B88D8D970B357F7F463F2AACAC171717074295C3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F95EE07970B0B3397848D0B8D8D8D460B210B1A188DFE0B91ACACACAC17743A9445FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD094C06217AF3FFD978D842A91B87D180B8484214C7F18848DFD91AC17AC433B3C93FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF296994C9AD88888817172A6346462F7DC21A84FE188D7F357F217D2ACE2A2AA12603FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF451994AD0788881717ACAC2A2ACECEE0B8FE211821758E7D46772F77919117732004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF41B38BAD88171717AC2AAC2A2ACE7791777777638C184C75637D63467D3F62DD03FCFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8F9470AD881717ACAC2ACE779191E0E0E0E06363E063E0758C8C8CFDB8186F8B03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC4ABAE736BB1B0072ACE777D8C8C637575758C752F75752F858E188518186B2009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF04030320208BB7C8551BB9177D18188E4C4C858C8C2F2F8C858E4C4C1846C8A704FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF44E7E81C0909A723A8C083557BAF0B1A218E8E85858E8E8E4C4C7F25B7090DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF44932C1C1C5E1CC56EC1839B62CE8C211A214C4C4C4C1B2303FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF07E1C1C2DC5BC15FA9B013F7F4C3555A7E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD41C1C1CC5D767C951A115A7A6FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7E5E5E5E03500944FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7E5EE9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\k/Icon\g\kSWF_Table\g\kOrigTable\g1019\k/OrigTable\g\kJoin_ColumnName\gid_materia\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1073\k/OrigCol\g\kGridName\gid_curso\k/GridName\g\kFormName\gid_curso\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\gcursos\k/FkTablename\g\kFkColname\gid_curso\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1071\k/OrigCol\g\kGridName\gid_departamento\k/GridName\g\kFormName\gid_departamento\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gTrue\k/IsForeignKey\g\kFkTablename\gdepartamentos\k/FkTablename\g\kFkColname\gid_departamento\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1021\k/OrigCol\g\kGridName\gid_materia\k/GridName\g\kFormName\gid_materia\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1024\k/OrigCol\g\kGridName\gmateria\k/GridName\g\kFormName\gmateria\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g350\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1025\k/OrigCol\g\kGridName\gtipo\k/GridName\g\kFormName\gtipo\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\kJoinTables\g\kSWF_Table\g\kOrigTable\g1057\k/OrigTable\g\kJoin_ColumnName\gcurso\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1059\k/OrigCol\g\kGridName\gid_curso\k/GridName\g\kFormName\gid_curso\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1061\k/OrigCol\g\kGridName\gcurso\k/GridName\g\kFormName\gcurso\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\kSWF_Table\g\kOrigTable\g1063\k/OrigTable\g\kJoin_ColumnName\gdepartamento\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1065\k/OrigCol\g\kGridName\gid_departamento\k/GridName\g\kFormName\gid_departamento\k/FormName\g\kSelectedForGrid\gFalse\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1067\k/OrigCol\g\kGridName\gdepartamento\k/GridName\g\kFormName\gdepartamento\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\k/JoinTables\g\k/SWF_View\g\kSWF_View\g\kFormHeight\g400\k/FormHeight\g\kFormWidth\g600\k/FormWidth\g\kFormX\g50\k/FormX\g\kFormY\g50\k/FormY\g\kGridPopupHeight\g600\k/GridPopupHeight\g\kGridPopupWidth\g800\k/GridPopupWidth\g\kGridPopupX\g200\k/GridPopupX\g\kGridPopupY\g100\k/GridPopupY\g\kName\gIntroducir departamentos\k/Name\g\kWhereClause\g\k/WhereClause\g\kRowsPerPage\g20\k/RowsPerPage\g\kUseCompoundColNames\gFalse\k/UseCompoundColNames\g\kIconFilename\gicons_01.png\k/IconFilename\g\kOrderBy\g\k/OrderBy\g\kGridSortedColumns\g1065,1067\k/GridSortedColumns\g\kFormSortedColumns\g1065,1067\k/FormSortedColumns\g\kIcon\g424D361400000000000036040000280000004000000040000000010008000000000000100000120B0000120B00000001000000010000FBE6BB00AD915700FBECCB00F5DCA400F2DDB300F1F1F100C8BBA100BDBCBB00C8B89700E4DBC700DCC5930087714900D7C6A600FCF4E100FDF2DB00CBCBCC00E8E8E800CBA65900F8DDA400EEEDED00D6BB8800D3B67B00B2B2B200C3C3C300E5E5E500DCD6C700F5F5F500F5E0B400FDD98C00ECEAE400F1EDE900F2CA7B00F5EBD300E2E2E200EBD19800C9B58B00F5D99C00F4D49200D9D9DA00AEAEAE00FBE0A500FCD48300948B7500F9D68A009C9A9500DDDDDD00FCFCFA00F4EDDC00FCD47C00F4D38C00DACCB500ECDDBA00E3DED500A4A3A200C3AA7900F9ECD200BBA47500E7CC9700FBE7BD00E2BD7500F9E0AE00F1E1BD00EBC57900AF9A6F00F7E5C000D5D5D500F1CD8500D1D1D000E4E8EB00FAF5EA00F5DEAE00F9E9C700EEE9DD00F9DA9900E9DFCB00FAE9C300E4E2DB00F9DD9E00F5E2B900F2DFB800FCFBF500EDD5A400FCD17600F1E5CB00BCAB8600A2A19E009A968B00CFC5B200F6D07D00F6D28400C2AE8800E2C28300C4A76900EFD9AC0084632400D5D8DB00F9DEAA00F8E6C300F9D99500FDE1A900FDDE9D00D3BE9400F8E2B400ECCD8B00FDDD9900F6E0AC00F1E2C000F0F0EF00DEE1E000F5DDA800FDD88600EEC98200F9E1B000ECF1F000FAD99000F3D59800E8E6E400F8F4F200D9B26400F7EACC00F5E6C400F5E3BC00D3D5D800DCDEE000ECDAB400EAE2D200D1C5AB00F6D79500F6F0E200F3F3F200FDE6B200E4D3B400FEF8EA00FEDB9000E3D1AD00F9E4B600E2D7BF00F3F5F900FCE6B700CED1D500F2DAA900ECE7D900F0DAAF00D1D2D300FDE4AD00DFD9CF00F7CD7000FAE1A800FCDA9400FCEBC600F8F9F900D8D5D400EEEEF000D5D4D200FEDD9200D3D4D600888A8800AC873E00E6E6E700CFCFCF00FCE3AB00CCB07A00E5E1D600DFE3E500F9EED800E7CA8B00AAA18E00EEC16900F0D08B00F3DCAD00DADCDD00F6F3F200F6E4BD00E3D9BC00FCDC9700EFD8A400E6E5E000DCDCDB00FEEAB700F5DAA800DFCAA200F1F2F400D8DADD00C09C5000BABAB800E2E4E500FAE4B300EAD7AD00F2F4F500B4BBB400EEEDEB00E8EAEE00EBEAEB00FDEEC700F3E5C400FCE3B100F2F0F100F8D69000E8ECEF00FCDFA000F7E8C600D4D3D300FBE8BF00FADD9900DCD4BE00FDEFCE00F6DB9F00F1DBAB00DBDAD900D3D5D300D7D7D700D8CFC000FFEDC200E3E3E400E6E3E300F3E4C200DFC68900F2E4BF00F4E3C000F8E3B900FBE3B400E9ECE800ECECEC00EECF9200D1AF6900CCAD6F00F7E7C800C7C7C700E0E0E000B6B5B400B7B7B700E2E3E200F5F8F400F3E8D100DFDFDE00FADA9B00FCDB9D00EDDFBF00E8D7BA00E4B65F00F0D7A000A8A8A700AAA9A300C1B296008E7E5E00C0A05D00DFC081009F9E9C00EFE2C800C0C0BF00F5E4C600F7D88F00FBE3AE00E7C68500E7C98700F6F6F600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A6B10C081FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A13D0E39F9E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6BB1F927E54113FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8121E6F72C35F9E481FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1017278FB856270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41E5E496740BF7E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF812116C905DE1D0BF435F92181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10F9F9C0DEAA2F015E56270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41E6D5052DBF7E9D9D0BF7E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81D527D11A9EA3B00111A79D2AF1F92181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0F99CBDDDA389069DA752EF5E2C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6BD2E6F19CF9B58D0111929252B70B35E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AD5E65FC0F79C2D5AB7A7529252529D2AF1172181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC017177198E32C2A0B765252523030A70B2C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B26E5741AB67B9FF45EB792523030303011F455E6266BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A18E68F75749B1E0601769D11583030303058012AF117D51AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0E3F913C0D274D3017652769D7629305830293E0BF7169FC01AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05D0E6E781B6AA1D3FF552301F11013E3058296E1C5CF435E6D06BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A18B84381187A100601A73058291F11B73E592B1C1C6E0156F117D51AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1ADEE307C0DE26D5913FE05858596E293BB711311C2B291C5BF4F7169FC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05B1E5D6B5B6261D54F51F59596E2B2B423BB73B31722B3194152A35B8B105FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A9E0743057B8F107E3F3B29596E1CC5A8594215F5F6FB2BFB9494F556F117181AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A130F07DE447AE73438E131596E1C9A3142319467E1F5FD7F62AE94672A551643DEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05B1E521C4B62680085C6F31311C9AC567A8C568AEFE5C5CDF647F4964152A35B8B105FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A9EF99FABD58B1DCC38F66231FB9AAEA8A8C56868AE7F5B5C1573EB64644D382CF1179E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF130FF913BE262DA25A157F7F62AE682567256864497F4973F65CF6EBC7644D393F55164313FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81EAE5D581EA261D0638A8CB49EB6449A82549C7EC7373734DCE155CDF28CE4D636556F1072D05FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10170F05747AA3195414CE4D4DC76425257F4DC7EB7373CE282822A13622032863515A2C27E39E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1343071313D2B6EAF3A1730303936324DF73C7284D242424286303932238A1AF90600351A655168F13FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81EAE6E46B2D9B9E5736DF636D6D90122222CE2828CE24CE2893121290900A3865466DFC826556F107EA81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10170F05D5C9E7915A14603CFC8290732224286303F0F012906003FCFC63600A360ABABAFC5DF32C27E3101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B8FB81013D2B1480623B31B1BDCB26D222212A060F0F0AF3C3CB36DC33C6082821436BB66698ABBA655E5C913FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8121B8EA05EAC910CC5A39874E4E3A8A512203A06303F0AF3CC36D3C82704669B2BA5D2323BB8AB2000C2CF1F9EA81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0E30FB59E97E4A208651B3AAC40000451513CC360AFAF46BA70468A8A46468A8A46000454653A3A1B4FF32C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41B81E987AD01D57238ECA61614B4E5D8C46C33CCFAFCF8A66A9668A1B0400CA044ECA3AB454B43D4ED47CA655E54113FFFFFFFFFFFFFFFFFFFFFFFFFFFF1AD5B8EAABEA8B9E0908B44B95C80261048EA9BADCA9CFCF66001B1B00DB044E3ADB1BCACA4F4BB45486C1D4797E2CF1F9E481FFFFFFFFFFFFFFFFFFFFFFFF1AC0E3E3989EC97B4C066540024702023D041B8787465D5D873A4E4E3A001B4ECA4E4FCA4B4F79C16165083D4BDAC206F7270FC0FFFFFFFFFFFFFFFFFFFFFFFF05D2B8C0BF7AD21DD3084F027702CD783D79AC001B8E8E043A3A4F3ACA4E4F3ACA4EAC953D3D9561D9400608ED02C1EE553507EA81FFFFFFFFFFFFFFFFFFFF1A1807B1C42D8BE77D0C86772037A477ED3D61404E048E043ACA4E794BAC4F404B3D3D9578ED47026AC2CDED5406CDC16157F2270FC01AFFFFFFFFFFFFFFFF1ADE0F176B7443AA747EB4E22020A4A4F8EDFA02404F7C7CAC4B4E3D4B613DDA47D76AC8476AC8CD786A02027883F30C9595ED572707EA81FFFFFFFFFFFFFFFF05B1E69EDED2411D0906EDA4A4A40EE9F8530202ED7C7C79C1403D4B476A6A47C86A0202C2C2CD476AC802C23D958654864BACEE071643DEFFFFFFFFFFFFFF1A9E072605E48FA38D0C83A42FA40EA45353370EE2337C339595D97802786A4702DA78CDC86A02C83D6A4B613D61CA4EB423864E65F3E59FDEFFFFFFFFFFFFFF130F176BC0D2AA1D320C37802F0D0EE953E90E0EC23333C802D7C2CD776A78CD786A02476A61953D3D4B404F793A1B00DB652323A136062D05FFFFFFFFFFFF812D169E6B265F104A7E4A0D800D0DA4E9200E0E376A33D702C8D7020278D702613D61954F794B794F3A3A1B1B001B1B00665D2336E1A106DE1AFFFFFFFFFF1A1007C905D58FA31D32EE80800D84808D200E0D0EE9ED3D02026A6102403D614B4FAC95794FCADB04DB001B1B8A66A9874669F0D8A5E108B01AFFFFFFFFFFFF1343F96B109BAA1019322045808445488D2F0D0D2053ED6195DA3D4B4B4F79CA4E4ECA001B3A00041B8A664666DCA9703C6DAFD8FD67143481FFFFFFFFFFFF81E4E6746B267A10A2324A4545848480482F0D0DA437F83D95AC4FCACA4EDBCA001B00DB1B873A46A98A66A970BA8C3CFC1203D8D86F141905FFFFFFFFFFFF1A101743ABE78B2D1DCC880D454584802F2F800D0E2020FA403A4EDB3A660400871B66664646DC3CB370828C6DFC6D6D600328A5D8FEF67E13FFFFFFFFFFFFFF6BC9F96BBE8F5F9E91322F50458445482F0D0D0DA420774700041B00878E66668E46DC468C703CB360909303939303A012F039FE316F08741AFFFFFFFFFFFF8121B87481AA8FA3C4D306ED370D8445800D0D0DA437CD02610446DCDC4646DCA9A9C33C6D3C3C036D636DCE2828CE284D4D73D8C559144C1AFFFFFFFFFFFF1AC0174381E743AAC0509157AD33D93333770E0D0DA43737CD6A5DC382696DFC3C0360900360A012032812CE12C74DC7C7EB7F672531F61981FFFFFFFFFFFFFF81B117DE10417AB91A81974C2F0DE9320C867C79DAE2020ECD4E69829303A0A012289303122803CE1212244DC7494D4D247FA53172FD7E13FFFFFFFFFFFFFFFF13F99EC026B644B596269B180596EA994C2FE983B4B4514FACBA696D03129312036312CE28C7244DC7492464AEAE64497F673194A865101AFFFFFFFFFFFFFFFFE499DEE426D56B969E437BBF89449BEA6B2E814C7DF8ED86B46093F0CE284D244DC7EB4DC7EB4964EB6268AE94686262A8429472144C1AFFFFFFFFFFFFFFFFFFD21D9ED074BE506B9726BFB5C497B11E2E9610A344E8E84883F0C74DC74D244D6449EB64CB626868C594947272C5722B1F72725B1981FFFFFFFFFFFFFFFFFFFF4310EAD56B50FFD0D21881FFEA99188996C0D6D66B2E7171AD396864C749CB64497F49AE729A9A728585721C72FB59586E85677E13FFFFFFFFFFFFFFFFFFFFFF99D618DE812E7B9F7B989610D16C052E989E9E139675C6968815A84949AE6468629494C5729A2B2B851C1C851C2B1F2985A814101AFFFFFFFFFFFFFFFFFFFFFFD5B16BBC2EC08F7B10FF6B99B1132EFFC0E4B69E05C0BC2E7D06235AA115F6FD3185851C851C2B1C1C6E6E2B2B1F586E29154C1AFFFFFFFFFFFFFFFFFFFFFFFF1AD518109EC99F21B596B1D210FF9610D2D2D0B1D00F9BD2D21D1E7D4A880C651415153B6F42591C296E6E6E58586E293BD381FFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1A1A1A0510D510219F9B10BC18E46B1A1A1A1A81051321D0B1D0B1D04C1E8D0988830A1415153B3B1F525230303E7E13FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1A81051005FFFFFFFFFFFFFFFFFF1A1A1A1A1A8113D5E47B7BD2918D7D0983B42323A13B76236B1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A81C0EAE7B97B8F6BAB48191EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\k/Icon\g\kSWF_Table\g\kOrigTable\g1063\k/OrigTable\g\kJoin_ColumnName\gid_departamento\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1065\k/OrigCol\g\kGridName\gid_departamento\k/GridName\g\kFormName\gid_departamento\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1067\k/OrigCol\g\kGridName\gdepartamento\k/GridName\g\kFormName\gdepartamento\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g350\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\k/SWF_View\g\kSWF_View\g\kFormHeight\g400\k/FormHeight\g\kFormWidth\g600\k/FormWidth\g\kFormX\g50\k/FormX\g\kFormY\g50\k/FormY\g\kGridPopupHeight\g600\k/GridPopupHeight\g\kGridPopupWidth\g800\k/GridPopupWidth\g\kGridPopupX\g200\k/GridPopupX\g\kGridPopupY\g100\k/GridPopupY\g\kName\gIntroducir editoriales\k/Name\g\kWhereClause\g\k/WhereClause\g\kRowsPerPage\g20\k/RowsPerPage\g\kUseCompoundColNames\gFalse\k/UseCompoundColNames\g\kIconFilename\gicons_01.png\k/IconFilename\g\kOrderBy\ga_editoriales.editorial\k/OrderBy\g\kGridSortedColumns\g1051,1053\k/GridSortedColumns\g\kFormSortedColumns\g1051,1053\k/FormSortedColumns\g\kIcon\g424D361400000000000036040000280000004000000040000000010008000000000000100000120B0000120B00000001000000010000FBE6BB00AD915700FBECCB00F5DCA400F2DDB300F1F1F100C8BBA100BDBCBB00C8B89700E4DBC700DCC5930087714900D7C6A600FCF4E100FDF2DB00CBCBCC00E8E8E800CBA65900F8DDA400EEEDED00D6BB8800D3B67B00B2B2B200C3C3C300E5E5E500DCD6C700F5F5F500F5E0B400FDD98C00ECEAE400F1EDE900F2CA7B00F5EBD300E2E2E200EBD19800C9B58B00F5D99C00F4D49200D9D9DA00AEAEAE00FBE0A500FCD48300948B7500F9D68A009C9A9500DDDDDD00FCFCFA00F4EDDC00FCD47C00F4D38C00DACCB500ECDDBA00E3DED500A4A3A200C3AA7900F9ECD200BBA47500E7CC9700FBE7BD00E2BD7500F9E0AE00F1E1BD00EBC57900AF9A6F00F7E5C000D5D5D500F1CD8500D1D1D000E4E8EB00FAF5EA00F5DEAE00F9E9C700EEE9DD00F9DA9900E9DFCB00FAE9C300E4E2DB00F9DD9E00F5E2B900F2DFB800FCFBF500EDD5A400FCD17600F1E5CB00BCAB8600A2A19E009A968B00CFC5B200F6D07D00F6D28400C2AE8800E2C28300C4A76900EFD9AC0084632400D5D8DB00F9DEAA00F8E6C300F9D99500FDE1A900FDDE9D00D3BE9400F8E2B400ECCD8B00FDDD9900F6E0AC00F1E2C000F0F0EF00DEE1E000F5DDA800FDD88600EEC98200F9E1B000ECF1F000FAD99000F3D59800E8E6E400F8F4F200D9B26400F7EACC00F5E6C400F5E3BC00D3D5D800DCDEE000ECDAB400EAE2D200D1C5AB00F6D79500F6F0E200F3F3F200FDE6B200E4D3B400FEF8EA00FEDB9000E3D1AD00F9E4B600E2D7BF00F3F5F900FCE6B700CED1D500F2DAA900ECE7D900F0DAAF00D1D2D300FDE4AD00DFD9CF00F7CD7000FAE1A800FCDA9400FCEBC600F8F9F900D8D5D400EEEEF000D5D4D200FEDD9200D3D4D600888A8800AC873E00E6E6E700CFCFCF00FCE3AB00CCB07A00E5E1D600DFE3E500F9EED800E7CA8B00AAA18E00EEC16900F0D08B00F3DCAD00DADCDD00F6F3F200F6E4BD00E3D9BC00FCDC9700EFD8A400E6E5E000DCDCDB00FEEAB700F5DAA800DFCAA200F1F2F400D8DADD00C09C5000BABAB800E2E4E500FAE4B300EAD7AD00F2F4F500B4BBB400EEEDEB00E8EAEE00EBEAEB00FDEEC700F3E5C400FCE3B100F2F0F100F8D69000E8ECEF00FCDFA000F7E8C600D4D3D300FBE8BF00FADD9900DCD4BE00FDEFCE00F6DB9F00F1DBAB00DBDAD900D3D5D300D7D7D700D8CFC000FFEDC200E3E3E400E6E3E300F3E4C200DFC68900F2E4BF00F4E3C000F8E3B900FBE3B400E9ECE800ECECEC00EECF9200D1AF6900CCAD6F00F7E7C800C7C7C700E0E0E000B6B5B400B7B7B700E2E3E200F5F8F400F3E8D100DFDFDE00FADA9B00FCDB9D00EDDFBF00E8D7BA00E4B65F00F0D7A000A8A8A700AAA9A300C1B296008E7E5E00C0A05D00DFC081009F9E9C00EFE2C800C0C0BF00F5E4C600F7D88F00FBE3AE00E7C68500E7C98700F6F6F600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A6B10C081FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A13D0E39F9E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6BB1F927E54113FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8121E6F72C35F9E481FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1017278FB856270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41E5E496740BF7E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF812116C905DE1D0BF435F92181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10F9F9C0DEAA2F015E56270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41E6D5052DBF7E9D9D0BF7E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81D527D11A9EA3B00111A79D2AF1F92181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0F99CBDDDA389069DA752EF5E2C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6BD2E6F19CF9B58D0111929252B70B35E6D26BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AD5E65FC0F79C2D5AB7A7529252529D2AF1172181FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC017177198E32C2A0B765252523030A70B2C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B26E5741AB67B9FF45EB792523030303011F455E6266BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A18E68F75749B1E0601769D11583030303058012AF117D51AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0E3F913C0D274D3017652769D7629305830293E0BF7169FC01AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05D0E6E781B6AA1D3FF552301F11013E3058296E1C5CF435E6D06BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A18B84381187A100601A73058291F11B73E592B1C1C6E0156F117D51AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1ADEE307C0DE26D5913FE05858596E293BB711311C2B291C5BF4F7169FC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05B1E5D6B5B6261D54F51F59596E2B2B423BB73B31722B3194152A35B8B105FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A9E0743057B8F107E3F3B29596E1CC5A8594215F5F6FB2BFB9494F556F117181AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A130F07DE447AE73438E131596E1C9A3142319467E1F5FD7F62AE94672A551643DEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05B1E521C4B62680085C6F31311C9AC567A8C568AEFE5C5CDF647F4964152A35B8B105FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A9EF99FABD58B1DCC38F66231FB9AAEA8A8C56868AE7F5B5C1573EB64644D382CF1179E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF130FF913BE262DA25A157F7F62AE682567256864497F4973F65CF6EBC7644D393F55164313FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81EAE5D581EA261D0638A8CB49EB6449A82549C7EC7373734DCE155CDF28CE4D636556F1072D05FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10170F05747AA3195414CE4D4DC76425257F4DC7EB7373CE282822A13622032863515A2C27E39E1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1343071313D2B6EAF3A1730303936324DF73C7284D242424286303932238A1AF90600351A655168F13FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF81EAE6E46B2D9B9E5736DF636D6D90122222CE2828CE24CE2893121290900A3865466DFC826556F107EA81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A10170F05D5C9E7915A14603CFC8290732224286303F0F012906003FCFC63600A360ABABAFC5DF32C27E3101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B8FB81013D2B1480623B31B1BDCB26D222212A060F0F0AF3C3CB36DC33C6082821436BB66698ABBA655E5C913FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8121B8EA05EAC910CC5A39874E4E3A8A512203A06303F0AF3CC36D3C82704669B2BA5D2323BB8AB2000C2CF1F9EA81FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1AC0E30FB59E97E4A208651B3AAC40000451513CC360AFAF46BA70468A8A46468A8A46000454653A3A1B4FF32C270F101AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6B41B81E987AD01D57238ECA61614B4E5D8C46C33CCFAFCF8A66A9668A1B0400CA044ECA3AB454B43D4ED47CA655E54113FFFFFFFFFFFFFFFFFFFFFFFFFFFF1AD5B8EAABEA8B9E0908B44B95C80261048EA9BADCA9CFCF66001B1B00DB044E3ADB1BCACA4F4BB45486C1D4797E2CF1F9E481FFFFFFFFFFFFFFFFFFFFFFFF1AC0E3E3989EC97B4C066540024702023D041B8787465D5D873A4E4E3A001B4ECA4E4FCA4B4F79C16165083D4BDAC206F7270FC0FFFFFFFFFFFFFFFFFFFFFFFF05D2B8C0BF7AD21DD3084F027702CD783D79AC001B8E8E043A3A4F3ACA4E4F3ACA4EAC953D3D9561D9400608ED02C1EE553507EA81FFFFFFFFFFFFFFFFFFFF1A1807B1C42D8BE77D0C86772037A477ED3D61404E048E043ACA4E794BAC4F404B3D3D9578ED47026AC2CDED5406CDC16157F2270FC01AFFFFFFFFFFFFFFFF1ADE0F176B7443AA747EB4E22020A4A4F8EDFA02404F7C7CAC4B4E3D4B613DDA47D76AC8476AC8CD786A02027883F30C9595ED572707EA81FFFFFFFFFFFFFFFF05B1E69EDED2411D0906EDA4A4A40EE9F8530202ED7C7C79C1403D4B476A6A47C86A0202C2C2CD476AC802C23D958654864BACEE071643DEFFFFFFFFFFFFFF1A9E072605E48FA38D0C83A42FA40EA45353370EE2337C339595D97802786A4702DA78CDC86A02C83D6A4B613D61CA4EB423864E65F3E59FDEFFFFFFFFFFFFFF130F176BC0D2AA1D320C37802F0D0EE953E90E0EC23333C802D7C2CD776A78CD786A02476A61953D3D4B404F793A1B00DB652323A136062D05FFFFFFFFFFFF812D169E6B265F104A7E4A0D800D0DA4E9200E0E376A33D702C8D7020278D702613D61954F794B794F3A3A1B1B001B1B00665D2336E1A106DE1AFFFFFFFFFF1A1007C905D58FA31D32EE80800D84808D200E0D0EE9ED3D02026A6102403D614B4FAC95794FCADB04DB001B1B8A66A9874669F0D8A5E108B01AFFFFFFFFFFFF1343F96B109BAA1019322045808445488D2F0D0D2053ED6195DA3D4B4B4F79CA4E4ECA001B3A00041B8A664666DCA9703C6DAFD8FD67143481FFFFFFFFFFFF81E4E6746B267A10A2324A4545848480482F0D0DA437F83D95AC4FCACA4EDBCA001B00DB1B873A46A98A66A970BA8C3CFC1203D8D86F141905FFFFFFFFFFFF1A101743ABE78B2D1DCC880D454584802F2F800D0E2020FA403A4EDB3A660400871B66664646DC3CB370828C6DFC6D6D600328A5D8FEF67E13FFFFFFFFFFFFFF6BC9F96BBE8F5F9E91322F50458445482F0D0D0DA420774700041B00878E66668E46DC468C703CB360909303939303A012F039FE316F08741AFFFFFFFFFFFF8121B87481AA8FA3C4D306ED370D8445800D0D0DA437CD02610446DCDC4646DCA9A9C33C6D3C3C036D636DCE2828CE284D4D73D8C559144C1AFFFFFFFFFFFF1AC0174381E743AAC0509157AD33D93333770E0D0DA43737CD6A5DC382696DFC3C0360900360A012032812CE12C74DC7C7EB7F672531F61981FFFFFFFFFFFFFF81B117DE10417AB91A81974C2F0DE9320C867C79DAE2020ECD4E69829303A0A012289303122803CE1212244DC7494D4D247FA53172FD7E13FFFFFFFFFFFFFFFF13F99EC026B644B596269B180596EA994C2FE983B4B4514FACBA696D03129312036312CE28C7244DC7492464AEAE64497F673194A865101AFFFFFFFFFFFFFFFFE499DEE426D56B969E437BBF89449BEA6B2E814C7DF8ED86B46093F0CE284D244DC7EB4DC7EB4964EB6268AE94686262A8429472144C1AFFFFFFFFFFFFFFFFFFD21D9ED074BE506B9726BFB5C497B11E2E9610A344E8E84883F0C74DC74D244D6449EB64CB626868C594947272C5722B1F72725B1981FFFFFFFFFFFFFFFFFFFF4310EAD56B50FFD0D21881FFEA99188996C0D6D66B2E7171AD396864C749CB64497F49AE729A9A728585721C72FB59586E85677E13FFFFFFFFFFFFFFFFFFFFFF99D618DE812E7B9F7B989610D16C052E989E9E139675C6968815A84949AE6468629494C5729A2B2B851C1C851C2B1F2985A814101AFFFFFFFFFFFFFFFFFFFFFFD5B16BBC2EC08F7B10FF6B99B1132EFFC0E4B69E05C0BC2E7D06235AA115F6FD3185851C851C2B1C1C6E6E2B2B1F586E29154C1AFFFFFFFFFFFFFFFFFFFFFFFF1AD518109EC99F21B596B1D210FF9610D2D2D0B1D00F9BD2D21D1E7D4A880C651415153B6F42591C296E6E6E58586E293BD381FFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1A1A1A0510D510219F9B10BC18E46B1A1A1A1A81051321D0B1D0B1D04C1E8D0988830A1415153B3B1F525230303E7E13FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A1A81051005FFFFFFFFFFFFFFFFFF1A1A1A1A1A8113D5E47B7BD2918D7D0983B42323A13B76236B1AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1A81C0EAE7B97B8F6BAB48191EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\k/Icon\g\kSWF_Table\g\kOrigTable\g1049\k/OrigTable\g\kJoin_ColumnName\gid_editorial\k/Join_ColumnName\g\kJoin_Width\g-1\k/Join_Width\g\kNM_Width\g-1\k/NM_Width\g\kSWF_Columns\g\kSWF_Column\g\kOrigCol\g1051\k/OrigCol\g\kGridName\gid_editorial\k/GridName\g\kFormName\gid_editorial\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gFalse\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g-1\k/FormWidth\g\k/SWF_Column\g\kSWF_Column\g\kOrigCol\g1053\k/OrigCol\g\kGridName\geditorial\k/GridName\g\kFormName\geditorial\k/FormName\g\kSelectedForGrid\gTrue\k/SelectedForGrid\g\kSelectedForForm\gTrue\k/SelectedForForm\g\kFixedWidth\g-1\k/FixedWidth\g\kTruncateChars\g-1\k/TruncateChars\g\kIsForeignKey\gFalse\k/IsForeignKey\g\kFkTablename\g\k/FkTablename\g\kFkColname\g\k/FkColname\g\kFormWidth\g350\k/FormWidth\g\k/SWF_Column\g\k/SWF_Columns\g\k/SWF_Table\g\k/SWF_View\g\k/SWF_Views\g\k/SWF_Group\g\k/SWF_Groups\g\k/SWF_Data\g\n" />
+</PLUGINDATAPARAMS>
+</PLUGINDATARECORD>
+</PLUGINDATARECORDS>
+</PLUGINDATA>
+<QUERYDATA>
+<QUERYRECORDS>
+</QUERYRECORDS>
+</QUERYDATA>
+<LINKEDMODELS>
+</LINKEDMODELS>
+</DBMODEL>
