@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "geslib";
-$password = "gl_DB-2012";
+$password = "geslib";
 $database = "geslib";
 /* Connect to the db and select a database*/
 $dbLink  = mysql_connect($host,$user, $password) or die("Couldn't connect to the database!");
