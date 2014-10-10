@@ -19,7 +19,7 @@ require_once ("inc/mysql.class.php");
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>hojas de pedido por clase</title>
+<title>Selecci&oacute;n alumnos</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
@@ -59,19 +59,20 @@ if (!isset($_GET['id_alumno'])) {
 		$alumno = $datos['ap1'] . " " . $datos['ap2'] . ", " . $datos['nom'];
 
 	// consulta para obtener las facturas del alumno
-		$sql = "SELECT id_factura, f_emision, id_pedido, total FROM facturas";
+		$sql = "SELECT id_factura, f_emision, id_pedido, total, emitida FROM facturas";
 		$sql .= " WHERE id_alumno=" . $id_alumno;
 		$base->consulta($sql) or die ("consulta facturas erronea"); 
-		echo '<table width="500" cellspacing="2" cellpadding="2" border="0">';
+		echo '<table width="600" cellspacing="2" cellpadding="2" border="0">';
 		if ($base->numregistros()>0) {
 			echo '<tr><td colspan=5 align="center" bgcolor=#cccccc>Facturas para '.$alumno.'</td></tr>';
 			while ($datos = $base->obtenerfila()) {
+				if ($datos['4']) { $emit = " - emitida"; } else { $emit = ""; }
 				echo '<tr><td width="300">' . sprintf("%04d",$datos[0]) .' - ';
 				echo $datos[1] . ' - ' . $datos[3] . ' &#0128;';
-				echo ' - ' . $datos[2];
+				echo ' - ' . $datos[2] . $emit;
 				echo '</td>';
-				echo '<td><a href="valida_fact.php?id_alumno='.$id_alumno;
-				echo '&id_factura='.$datos[0].'">validar</a></td>';
+				echo '<td><a href="fra_contable.php?';
+				echo 'id_factura='.$datos[0].'">Fra. real</a></td>';
 				echo '<td><a href="mod_fact.php?id_alumno='.$id_alumno;
 				echo '&id_factura='.$datos[0].'">modificar</a></td>';
 				echo '<td><a href="pdf/pdf_fact.php?id_alumno='.$id_alumno;
